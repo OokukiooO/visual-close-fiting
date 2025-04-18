@@ -1,0 +1,26 @@
+/* 侧边栏动画 */
+.sidebar {
+    background: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .toggle-button {
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }

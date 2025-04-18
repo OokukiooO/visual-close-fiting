@@ -1,0 +1,143 @@
+/* display2D.module.css */
+.main {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  
+  .formContainer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .inputGroup {
+    margin-bottom: 2rem;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .inputGroup input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .uploadSection {
+    margin-bottom: 2rem;
+  }
+  
+  .uploadSection label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .dropZone {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    position: relative;
+  }
+  
+  .dropZone:hover {
+    border-color: #666;
+  }
+  
+  .dropZone input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .previewImage {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    background: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .submitButton:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .statusMessage {
+    margin-top: 1rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .errorMessage {
+    color: #dc3545;
+    margin-top: 1rem;
+  }
+  
+  .resultSection {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .successMessage {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .downloadButton {
+    background: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .resultPreview{
+    width: 15rem;
+  }
+
+  .previewSection{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }

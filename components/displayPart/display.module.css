@@ -1,0 +1,41 @@
+/* 基础布局 */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  
+.contentWrapper {
+    width: inherit;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.mainContent{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* display.module.css */
+
+  
+  .content-box {
+    background: rgba(77, 77, 77, 0.733);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .default-view {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+  }
